@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/mlgqpaaj";
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/xvzewjwa";
 
 export default function WaitlistForm() {
   const [email, setEmail] = useState("");
