@@ -16,8 +16,8 @@ export default function WaitlistForm() {
 
   if (submitted) {
     return (
-      <p className="rounded-full border border-emerald-200 bg-emerald-50 px-6 py-3 text-sm font-medium text-emerald-800 dark:border-emerald-900 dark:bg-emerald-950 dark:text-emerald-300">
-        Thanks — we&apos;ll be in touch when we launch.
+      <p className="rounded-full border border-sage-light bg-sage-light/20 px-6 py-3 font-mono text-xs uppercase tracking-[0.1em] text-sage-deep">
+        You&apos;re on the list — we&apos;ll be in touch.
       </p>
     );
   }
@@ -37,11 +37,11 @@ export default function WaitlistForm() {
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         placeholder="you@example.com"
-        className="h-12 flex-1 rounded-full border border-black/10 bg-white px-5 text-sm text-zinc-900 outline-none focus:border-zinc-400 dark:border-white/15 dark:bg-zinc-900 dark:text-zinc-50"
+        className="h-12 flex-1 rounded-full border border-ink/15 bg-white px-5 text-sm text-ink outline-none focus:border-sage"
       />
       <button
         type="submit"
-        className="h-12 shrink-0 rounded-full bg-zinc-900 px-6 text-sm font-semibold text-white transition-colors hover:bg-zinc-700 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200"
+        className="h-12 shrink-0 rounded-full bg-ink px-6 text-sm font-medium text-white transition-colors hover:bg-sage-deep"
       >
         Join the waitlist
       </button>
