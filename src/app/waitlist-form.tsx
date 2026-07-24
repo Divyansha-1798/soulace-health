@@ -56,12 +56,12 @@ export default function WaitlistForm() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="you@example.com"
-          className="h-12 flex-1 rounded-full border border-ink/15 bg-white px-5 text-sm text-ink outline-none focus:border-sage"
+          className="h-12 flex-1 rounded-full border border-ink/15 bg-white px-5 text-sm text-ink outline-none transition-shadow duration-300 focus:border-sage focus:ring-4 focus:ring-sage/15"
         />
         <button
           type="submit"
           disabled={status === "submitting"}
-          className="h-12 shrink-0 rounded-full bg-ink px-6 text-sm font-medium text-white transition-colors hover:bg-sage-deep disabled:opacity-60"
+          className="h-12 shrink-0 rounded-full bg-ink px-6 text-sm font-medium text-white transition-all duration-300 hover:scale-[1.03] hover:bg-sage-deep active:scale-[0.98] disabled:opacity-60 disabled:hover:scale-100"
         >
           {status === "submitting" ? "Joining…" : "Join the waitlist"}
         </button>

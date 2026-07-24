@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Reveal from "../reveal";
 
 const signals = [
   {
@@ -19,7 +20,7 @@ export default function Science() {
   return (
     <section className="mx-auto w-full max-w-6xl px-6 pb-20">
       <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:items-center">
-        <div>
+        <Reveal>
           <span className="font-mono text-xs uppercase tracking-[0.12em] text-sage-deep">
             The science, plainly
           </span>
@@ -53,17 +54,20 @@ export default function Science() {
             product&apos;s response and your own insight — they are not a
             medical-grade diagnosis of anxiety or any other condition.
           </p>
-        </div>
+        </Reveal>
 
-        <div className="relative aspect-square w-full overflow-hidden rounded-3xl">
+        <Reveal
+          delay={0.15}
+          className="group relative aspect-square w-full overflow-hidden rounded-3xl"
+        >
           <Image
             src="/sensor-macro.jpg"
             alt="Macro detail of the Soulace sensor array"
             fill
-            className="object-cover"
+            className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
             sizes="(min-width: 1024px) 50vw, 100vw"
           />
-        </div>
+        </Reveal>
       </div>
     </section>
   );

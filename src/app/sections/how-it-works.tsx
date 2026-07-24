@@ -1,3 +1,5 @@
+import Reveal from "../reveal";
+
 const steps = [
   {
     number: "01",
@@ -23,8 +25,8 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section className="mx-auto w-full max-w-6xl px-6 pb-20">
-      <div className="text-center">
+    <section className="mx-auto w-full max-w-6xl px-6 pb-24">
+      <Reveal className="text-center">
         <span className="font-mono text-xs uppercase tracking-[0.12em] text-sage-deep">
           How it works
         </span>
@@ -36,20 +38,31 @@ export default function HowItWorks() {
           senses, decides, and responds automatically — you only reflect once
           things have settled.
         </p>
-      </div>
+      </Reveal>
 
-      <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2">
-        {steps.map((step) => (
-          <div
+      <div className="mt-14 flex flex-col divide-y divide-ink/10 border-y border-ink/10 sm:grid sm:grid-cols-4 sm:divide-x sm:divide-y-0">
+        {steps.map((step, i) => (
+          <Reveal
             key={step.number}
-            className="rounded-2xl border border-ink/10 p-6"
+            delay={i * 0.08}
+            className="group relative overflow-hidden px-2 py-8 sm:px-6"
           >
-            <p className="font-mono text-xs text-sage-deep">{step.number}</p>
-            <h3 className="mt-2 font-display text-lg uppercase tracking-[-0.01em] text-ink">
+            <span
+              aria-hidden
+              className="pointer-events-none absolute -right-2 -top-6 font-display text-8xl uppercase text-ink/[0.04] transition-colors duration-500 group-hover:text-sage/10 sm:text-9xl"
+            >
+              {step.number}
+            </span>
+            <p className="relative font-mono text-xs text-sage-deep">
+              {step.number}
+            </p>
+            <h3 className="relative mt-3 font-display text-lg uppercase tracking-[-0.01em] text-ink">
               {step.title}
             </h3>
-            <p className="mt-2 text-sm leading-6 text-ink/70">{step.body}</p>
-          </div>
+            <p className="relative mt-2 text-sm leading-6 text-ink/70">
+              {step.body}
+            </p>
+          </Reveal>
         ))}
       </div>
     </section>

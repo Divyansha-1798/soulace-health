@@ -1,3 +1,5 @@
+import Reveal from "../reveal";
+
 const stats = [
   {
     title: "2 sensors",
@@ -20,7 +22,7 @@ const stats = [
 export default function ProblemPanel() {
   return (
     <section className="px-6 pb-20">
-      <div className="mx-auto w-full max-w-6xl rounded-3xl bg-ink px-6 py-14 sm:px-12 sm:py-16">
+      <Reveal className="mx-auto w-full max-w-6xl overflow-hidden rounded-3xl bg-ink px-6 py-14 sm:px-12 sm:py-16 grain">
         <span className="font-mono text-xs uppercase tracking-[0.12em] text-sage-light">
           The problem with most tools
         </span>
@@ -39,7 +41,7 @@ export default function ProblemPanel() {
           {stats.map((stat) => (
             <div
               key={stat.title}
-              className="rounded-2xl border border-white/10 bg-white/5 p-5"
+              className="rounded-2xl border border-white/10 bg-white/5 p-5 transition-colors duration-300 hover:border-sage-light/40 hover:bg-white/[0.08]"
             >
               <p className="font-mono text-sm text-sage-light">
                 {stat.title}
@@ -50,7 +52,7 @@ export default function ProblemPanel() {
             </div>
           ))}
         </div>
-      </div>
+      </Reveal>
     </section>
   );
 }

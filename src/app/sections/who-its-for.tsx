@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Reveal from "../reveal";
 
 const cases = [
   {
@@ -20,16 +21,18 @@ const cases = [
 
 export default function WhoItsFor() {
   return (
-    <section className="mx-auto w-full max-w-6xl px-6 pb-20">
-      <span className="font-mono text-xs uppercase tracking-[0.12em] text-sage-deep">
-        Who it&apos;s for
-      </span>
-      <h2 className="mt-4 max-w-2xl font-display text-3xl uppercase leading-tight tracking-[-0.01em] text-ink sm:text-4xl">
-        Built for the moments your body reacts first.
-      </h2>
+    <section className="mx-auto w-full max-w-6xl px-6 pb-24">
+      <Reveal>
+        <span className="font-mono text-xs uppercase tracking-[0.12em] text-sage-deep">
+          Who it&apos;s for
+        </span>
+        <h2 className="mt-4 max-w-2xl font-display text-3xl uppercase leading-tight tracking-[-0.01em] text-ink sm:text-4xl">
+          Built for the moments your body reacts first.
+        </h2>
+      </Reveal>
 
       <div className="mt-10 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-start">
-        <div className="relative aspect-[4/5] w-full overflow-hidden rounded-3xl">
+        <Reveal delay={0.1} className="relative aspect-[4/5] w-full overflow-hidden rounded-3xl">
           <Image
             src="/lifestyle-window.jpg"
             alt="Woman sitting calmly by a window"
@@ -37,24 +40,25 @@ export default function WhoItsFor() {
             className="object-cover"
             sizes="(min-width: 1024px) 50vw, 100vw"
           />
-        </div>
+        </Reveal>
 
         <div className="flex flex-col gap-6">
-          {cases.map((item) => (
-            <div
+          {cases.map((item, i) => (
+            <Reveal
               key={item.number}
-              className="border-b border-ink/10 pb-6 last:border-b-0"
+              delay={0.15 + i * 0.1}
+              className="group border-b border-ink/10 pb-6 transition-colors duration-300 last:border-b-0 hover:border-sage/40"
             >
               <p className="font-mono text-xs text-sage-deep">
                 {item.number}
               </p>
-              <h3 className="mt-2 font-display text-lg uppercase tracking-[-0.01em] text-ink">
+              <h3 className="mt-2 font-display text-lg uppercase tracking-[-0.01em] text-ink transition-transform duration-300 group-hover:translate-x-1">
                 {item.title}
               </h3>
               <p className="mt-2 text-sm leading-6 text-ink/70">
                 {item.body}
               </p>
-            </div>
+            </Reveal>
           ))}
         </div>
       </div>

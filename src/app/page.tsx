@@ -7,6 +7,7 @@ import WhoItsFor from "./sections/who-its-for";
 import Science from "./sections/science";
 import AppSection from "./sections/app-section";
 import BandSection from "./sections/band-section";
+import Testimonials from "./sections/testimonials";
 import WaitlistSection from "./sections/waitlist-section";
 import Faq from "./sections/faq";
 import SiteFooter from "./sections/site-footer";
@@ -23,6 +24,7 @@ export default function Home() {
       <Science />
       <AppSection />
       <BandSection />
+      <Testimonials />
       <WaitlistSection />
       <Faq />
       <SiteFooter />

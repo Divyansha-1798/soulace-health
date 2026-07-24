@@ -1,3 +1,6 @@
+import Reveal from "../reveal";
+import PulseWave from "../pulse-wave";
+
 const bullets = [
   {
     title: "Live sensor view",
@@ -19,9 +22,9 @@ const bullets = [
 
 export default function AppSection() {
   return (
-    <section className="mx-auto w-full max-w-6xl px-6 pb-20">
+    <section className="mx-auto w-full max-w-6xl px-6 pb-24">
       <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:items-center">
-        <div>
+        <Reveal>
           <span className="font-mono text-xs uppercase tracking-[0.12em] text-sage-deep">
             The Soulace app
           </span>
@@ -51,12 +54,26 @@ export default function AppSection() {
               </li>
             ))}
           </ul>
-        </div>
+        </Reveal>
 
-        <div className="rounded-3xl border border-ink/10 bg-white p-6 shadow-sm">
-          <span className="font-mono text-xs uppercase tracking-[0.1em] text-ink/40">
-            Right now
-          </span>
+        <Reveal
+          delay={0.15}
+          className="rounded-3xl border border-ink/10 bg-white p-6 shadow-sm transition-shadow duration-300 hover:shadow-md"
+        >
+          <div className="flex items-center justify-between">
+            <span className="font-mono text-xs uppercase tracking-[0.1em] text-ink/40">
+              Right now
+            </span>
+            <span className="flex items-center gap-1.5 rounded-full bg-sage-light/20 px-2.5 py-1">
+              <span className="relative flex h-1.5 w-1.5">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-sage opacity-75" />
+                <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-sage" />
+              </span>
+              <span className="font-mono text-[10px] uppercase tracking-[0.08em] text-sage-deep">
+                Live
+              </span>
+            </span>
+          </div>
           <div className="mt-3 grid grid-cols-2 gap-4">
             <div>
               <p className="font-display text-2xl uppercase text-ink">
@@ -75,6 +92,7 @@ export default function AppSection() {
               </p>
             </div>
           </div>
+          <PulseWave className="mt-4 h-8 w-full text-sage-light" />
 
           <div className="mt-6 border-t border-ink/10 pt-6">
             <span className="font-mono text-xs uppercase tracking-[0.1em] text-ink/40">
@@ -93,7 +111,7 @@ export default function AppSection() {
               </p>
             </div>
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );
