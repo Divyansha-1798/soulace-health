@@ -1,30 +1,44 @@
+import Image from "next/image";
 import LogoMark from "./logo-mark";
 import WaitlistForm from "./waitlist-form";
 
 export default function Home() {
   return (
     <div className="flex flex-1 flex-col bg-cream">
-      <header className="mx-auto flex w-full max-w-3xl items-center px-6 py-8">
+      <header className="mx-auto flex w-full max-w-6xl items-center px-6 py-8">
         <LogoMark />
       </header>
 
-      <main className="mx-auto flex w-full max-w-2xl flex-1 flex-col items-center justify-center gap-8 px-6 pb-32 text-center">
-        <span className="rounded-full bg-sage-light/30 px-4 py-1.5 font-mono text-xs uppercase tracking-[0.12em] text-sage-deep">
-          Infrasonic · Vagus nerve toning
-        </span>
+      <main className="mx-auto grid w-full max-w-6xl flex-1 grid-cols-1 items-center gap-12 px-6 py-12 lg:grid-cols-2 lg:gap-16 lg:py-20">
+        <div className="flex flex-col items-center gap-8 text-center lg:items-start lg:text-left">
+          <span className="rounded-full bg-sage-light/30 px-4 py-1.5 font-mono text-xs uppercase tracking-[0.12em] text-sage-deep">
+            Infrasonic · Vagus nerve toning
+          </span>
 
-        <h1 className="max-w-xl font-display text-4xl uppercase leading-tight tracking-[-0.01em] text-ink sm:text-5xl">
-          Meet anxiety before it builds.
-        </h1>
+          <h1 className="max-w-xl font-display text-4xl uppercase leading-tight tracking-[-0.01em] text-ink sm:text-5xl">
+            Meet anxiety before it builds.
+          </h1>
 
-        <p className="max-w-lg text-lg leading-8 text-ink/70">
-          The Soulace Band delivers a gentle physical signal at your wrist to
-          help tone the vagus nerve and cue your body back toward calm — the
-          moment symptoms begin, not minutes after. We&apos;re opening early
-          access soon.
-        </p>
+          <p className="max-w-lg text-lg leading-8 text-ink/70">
+            The Soulace Band delivers a gentle physical signal at your wrist
+            to help tone the vagus nerve and cue your body back toward calm —
+            the moment symptoms begin, not minutes after. We&apos;re opening
+            early access soon.
+          </p>
 
-        <WaitlistForm />
+          <WaitlistForm />
+        </div>
+
+        <div className="relative aspect-square w-full max-w-lg overflow-hidden rounded-3xl lg:mx-0 lg:justify-self-end">
+          <Image
+            src="/band-hero.jpg"
+            alt="The Soulace Band worn on a wrist"
+            fill
+            priority
+            className="object-cover"
+            sizes="(min-width: 1024px) 32rem, 100vw"
+          />
+        </div>
       </main>
 
       <footer className="border-t border-ink/10 bg-white px-6 py-8">
