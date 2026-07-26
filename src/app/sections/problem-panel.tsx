@@ -26,7 +26,7 @@ export default function ProblemPanel() {
         <span className="font-mono text-xs uppercase tracking-[0.12em] text-sage-light">
           The problem with most tools
         </span>
-        <h2 className="mt-4 max-w-2xl font-display text-3xl uppercase leading-tight tracking-[-0.01em] text-white sm:text-4xl">
+        <h2 className="mt-4 max-w-2xl font-display font-black text-3xl uppercase leading-tight text-white sm:text-4xl">
           Most anxiety support arrives after the moment has already passed.
         </h2>
         <p className="mt-5 max-w-2xl text-base leading-7 text-white/70 sm:text-lg">

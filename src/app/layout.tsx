@@ -1,16 +1,11 @@
 import type { Metadata } from "next";
-import { Archivo_Black, Inter, IBM_Plex_Mono } from "next/font/google";
+import { Inter, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
-
-const archivoBlack = Archivo_Black({
-  variable: "--font-archivo-black",
-  subsets: ["latin"],
-  weight: "400",
-});
 
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800", "900"],
 });
 
 const plexMono = IBM_Plex_Mono({
@@ -33,7 +28,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${archivoBlack.variable} ${inter.variable} ${plexMono.variable} h-full antialiased`}
+      className={`${inter.variable} ${plexMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>

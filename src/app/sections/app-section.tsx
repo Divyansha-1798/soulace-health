@@ -1,5 +1,4 @@
 import Reveal from "../reveal";
-import PulseWave from "../pulse-wave";
 
 const bullets = [
   {
@@ -20,6 +19,8 @@ const bullets = [
   },
 ];
 
+const weekBars = [30, 45, 35, 60, 50, 70, 55];
+
 export default function AppSection() {
   return (
     <section id="app" className="mx-auto w-full max-w-6xl px-6 pb-24">
@@ -28,7 +29,7 @@ export default function AppSection() {
           <span className="font-mono text-xs uppercase tracking-[0.12em] text-sage-deep">
             The Soulace app
           </span>
-          <h2 className="mt-4 font-display text-3xl uppercase leading-tight tracking-[-0.01em] text-ink sm:text-4xl">
+          <h2 className="mt-4 font-display font-black text-3xl uppercase leading-tight text-ink sm:text-4xl">
             Every reading, made visible.
           </h2>
           <p className="mt-5 text-base leading-7 text-ink/70">
@@ -60,49 +61,52 @@ export default function AppSection() {
           delay={0.15}
           className="rounded-3xl border border-ink/10 bg-white p-6 shadow-sm transition-shadow duration-300 hover:shadow-md"
         >
-          <div className="flex items-center justify-between">
-            <span className="font-mono text-xs uppercase tracking-[0.1em] text-ink/40">
-              Right now
-            </span>
-            <span className="flex items-center gap-1.5 rounded-full bg-sage-light/20 px-2.5 py-1">
-              <span className="relative flex h-1.5 w-1.5">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-sage opacity-75" />
-                <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-sage" />
-              </span>
-              <span className="font-mono text-[10px] uppercase tracking-[0.08em] text-sage-deep">
-                Live
-              </span>
-            </span>
-          </div>
-          <div className="mt-3 grid grid-cols-2 gap-4">
-            <div>
-              <p className="font-display text-2xl uppercase text-ink">
-                Calm
+          <span className="font-mono text-xs uppercase tracking-[0.1em] text-ink/40">
+            Right now
+          </span>
+          <p className="mt-1 font-display font-black text-2xl uppercase text-ink">
+            Calm
+          </p>
+
+          <div className="mt-4 grid grid-cols-2 gap-3">
+            <div className="rounded-2xl bg-cream px-4 py-3">
+              <p className="font-mono text-sm font-medium text-ink">
+                68 bpm
               </p>
-              <p className="mt-1 font-mono text-xs uppercase tracking-[0.08em] text-sage-deep">
-                68 bpm · heart rate
+              <p className="mt-0.5 font-mono text-xs uppercase tracking-[0.08em] text-ink/50">
+                Heart rate
               </p>
             </div>
-            <div>
-              <p className="font-display text-2xl uppercase text-ink">
+            <div className="rounded-2xl bg-cream px-4 py-3">
+              <p className="font-mono text-sm font-medium text-ink">
                 Stable
               </p>
-              <p className="mt-1 font-mono text-xs uppercase tracking-[0.08em] text-sage-deep">
-                Skin conductance
+              <p className="mt-0.5 font-mono text-xs uppercase tracking-[0.08em] text-ink/50">
+                Skin cond.
               </p>
             </div>
           </div>
-          <PulseWave className="mt-4 h-8 w-full text-sage-light" />
 
           <div className="mt-6 border-t border-ink/10 pt-6">
             <span className="font-mono text-xs uppercase tracking-[0.1em] text-ink/40">
               This week
             </span>
-            <p className="mt-2 font-display text-lg uppercase text-ink">
-              Fewer, shorter onsets
+            <div className="mt-3 flex h-16 items-end gap-1.5">
+              {weekBars.map((h, i) => (
+                <span
+                  key={i}
+                  className="flex-1 rounded-t-sm bg-sage-light"
+                  style={{ height: `${h}%` }}
+                  aria-hidden
+                />
+              ))}
+            </div>
+            <p className="mt-2 text-sm text-ink/60">
+              Onsets detected, down from last week
             </p>
-            <div className="mt-4 rounded-2xl bg-sage-light/20 p-4">
-              <p className="text-sm font-medium text-ink">
+
+            <div className="mt-4 rounded-2xl bg-ink/[0.03] p-4">
+              <p className="font-mono text-sm font-medium text-ink">
                 Onset flagged, 2:14pm
               </p>
               <p className="mt-1 text-sm leading-6 text-ink/60">

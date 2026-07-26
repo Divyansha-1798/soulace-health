@@ -8,7 +8,7 @@ export default function Faq() {
         <span className="font-mono text-xs uppercase tracking-[0.12em] text-sage-deep">
           Questions
         </span>
-        <h2 className="mt-4 font-display text-3xl uppercase leading-tight tracking-[-0.01em] text-ink sm:text-4xl">
+        <h2 className="mt-4 font-display font-black text-3xl uppercase leading-tight text-ink sm:text-4xl">
           Before you wear one.
         </h2>
 

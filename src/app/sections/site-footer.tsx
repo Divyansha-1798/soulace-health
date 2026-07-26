@@ -29,9 +29,9 @@ const columns = [
 
 export default function SiteFooter() {
   return (
-    <footer className="border-t border-ink/10 bg-white px-6 py-14">
-      <div className="mx-auto flex w-full max-w-6xl flex-col gap-12">
-        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+    <footer className="px-6 pb-10 pt-4">
+      <div className="mx-auto flex w-full max-w-6xl flex-col gap-6">
+        <div className="grid grid-cols-1 gap-10 rounded-3xl border border-ink/10 p-8 sm:grid-cols-2 sm:p-10 lg:grid-cols-4">
           <div>
             <LogoMark />
             <p className="mt-3 max-w-xs text-sm leading-6 text-ink/60">
@@ -61,7 +61,7 @@ export default function SiteFooter() {
           ))}
         </div>
 
-        <div className="flex flex-col gap-6 border-t border-ink/10 pt-8">
+        <div className="flex flex-col gap-6 pt-2">
           <p className="max-w-3xl text-xs leading-relaxed text-ink/50">
             Soulace Health products are designed to support relaxation and
             general stress resilience. They are not medical devices and are

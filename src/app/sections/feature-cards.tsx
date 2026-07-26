@@ -22,8 +22,12 @@ export default function FeatureCards() {
   return (
     <section className="mx-auto grid w-full max-w-6xl grid-cols-1 gap-6 px-6 pb-20 sm:grid-cols-2">
       {cards.map((card, i) => (
-        <Reveal key={card.title} delay={i * 0.12} className="flex flex-col gap-5">
-          <div className="group relative aspect-[4/3] w-full overflow-hidden rounded-3xl">
+        <Reveal
+          key={card.title}
+          delay={i * 0.12}
+          className="flex flex-col gap-5 rounded-3xl border border-ink/10 bg-white p-3 shadow-sm transition-shadow duration-300 hover:shadow-md"
+        >
+          <div className="group relative aspect-[4/3] w-full overflow-hidden rounded-2xl">
             <Image
               src={card.src}
               alt={card.alt}
@@ -31,12 +35,12 @@ export default function FeatureCards() {
               className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
               sizes="(min-width: 640px) 50vw, 100vw"
             />
-            <span className="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1.5 font-mono text-xs uppercase tracking-[0.1em] text-sage-deep">
-              {card.label}
-            </span>
           </div>
-          <div>
-            <h3 className="font-display text-xl uppercase tracking-[-0.01em] text-ink">
+          <div className="px-2 pb-3">
+            <p className="font-mono text-xs uppercase tracking-[0.1em] text-sage-deep">
+              {card.label}
+            </p>
+            <h3 className="mt-2 font-display font-black text-xl uppercase text-ink">
               {card.title}
             </h3>
             <p className="mt-2 text-base leading-7 text-ink/70">

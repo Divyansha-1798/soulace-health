@@ -30,7 +30,7 @@ export default function HowItWorks() {
         <span className="font-mono text-xs uppercase tracking-[0.12em] text-sage-deep">
           How it works
         </span>
-        <h2 className="mx-auto mt-4 max-w-2xl font-display text-3xl uppercase leading-tight tracking-[-0.01em] text-ink sm:text-4xl">
+        <h2 className="mx-auto mt-4 max-w-2xl font-display font-black text-3xl uppercase leading-tight text-ink sm:text-4xl">
           Four steps, running quietly on your wrist.
         </h2>
         <p className="mx-auto mt-5 max-w-xl text-base leading-7 text-ink/70">
@@ -51,14 +51,14 @@ export default function HowItWorks() {
           >
             <span
               aria-hidden
-              className="pointer-events-none absolute -right-2 -top-6 font-display text-8xl uppercase text-ink/[0.04] transition-colors duration-500 group-hover:text-sage/10 sm:text-9xl"
+              className="pointer-events-none absolute -right-2 -top-6 font-display font-black text-8xl uppercase text-ink/[0.04] transition-colors duration-500 group-hover:text-sage/10 sm:text-9xl"
             >
               {step.number}
             </span>
             <p className="relative font-mono text-xs text-sage-deep">
               {step.number}
             </p>
-            <h3 className="relative mt-3 font-display text-lg uppercase tracking-[-0.01em] text-ink">
+            <h3 className="relative mt-3 font-display font-black text-lg uppercase text-ink">
               {step.title}
             </h3>
             <p className="relative mt-2 text-sm leading-6 text-ink/70">
