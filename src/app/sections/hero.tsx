@@ -81,14 +81,30 @@ export default function Hero() {
           className="mt-12 flex items-center gap-4"
         >
           <div className="rounded-2xl bg-white px-5 py-4">
-            <p className="font-mono text-xs uppercase tracking-[0.08em] text-ink/50">
-              Heart rate
-            </p>
-            <p className="mt-1 font-display font-black text-3xl text-ink">
+            <span className="flex items-center gap-1.5">
+              <span className="relative flex h-1.5 w-1.5">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-sage opacity-75" />
+                <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-sage" />
+              </span>
+              <span className="font-mono text-xs uppercase tracking-[0.08em] text-ink/50">
+                Heart rate
+              </span>
+            </span>
+            <motion.p
+              className="mt-1 font-display font-black text-3xl text-ink"
+              animate={{ scale: [1, 1.08, 1] }}
+              transition={{
+                duration: 0.6,
+                repeat: Infinity,
+                repeatDelay: 0.4,
+                ease: ["easeOut", "easeIn"],
+              }}
+              style={{ transformOrigin: "left center" }}
+            >
               100 <span className="text-lg">bpm</span>
-            </p>
+            </motion.p>
           </div>
-          <PulseWave className="h-8 w-24 text-sage-deep/50" />
+          <PulseWave className="h-8 w-24 text-sage-deep/50" duration={1} />
         </motion.div>
       </div>
     </section>
