@@ -25,7 +25,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section className="mx-auto w-full max-w-6xl px-6 pb-24">
+    <section id="how-it-works" className="mx-auto w-full max-w-6xl px-6 pb-24 pt-4">
       <Reveal className="text-center">
         <span className="font-mono text-xs uppercase tracking-[0.12em] text-sage-deep">
           How it works
@@ -40,12 +40,14 @@ export default function HowItWorks() {
         </p>
       </Reveal>
 
-      <div className="mt-14 flex flex-col divide-y divide-ink/10 border-y border-ink/10 sm:grid sm:grid-cols-4 sm:divide-x sm:divide-y-0">
+      <div className="mt-14 grid grid-cols-1 divide-y divide-ink/10 border-y border-ink/10 sm:grid-cols-2 sm:divide-x sm:divide-y-0">
         {steps.map((step, i) => (
           <Reveal
             key={step.number}
             delay={i * 0.08}
-            className="group relative overflow-hidden px-2 py-8 sm:px-6"
+            className={`group relative overflow-hidden px-2 py-8 sm:px-6 ${
+              i < 2 ? "sm:border-b sm:border-ink/10" : ""
+            }`}
           >
             <span
               aria-hidden

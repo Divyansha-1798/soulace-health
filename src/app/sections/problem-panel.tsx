@@ -37,11 +37,11 @@ export default function ProblemPanel() {
           has taken hold.
         </p>
 
-        <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid grid-cols-1 divide-y divide-white/10 border-t border-white/10 sm:grid-cols-2 sm:divide-x sm:divide-y-0 sm:border-x lg:grid-cols-4">
           {stats.map((stat) => (
             <div
               key={stat.title}
-              className="rounded-2xl border border-white/10 bg-white/5 p-5 transition-colors duration-300 hover:border-sage-light/40 hover:bg-white/[0.08]"
+              className="px-1 py-6 transition-colors duration-300 hover:bg-white/[0.04] sm:px-5"
             >
               <p className="font-mono text-sm text-sage-light">
                 {stat.title}
