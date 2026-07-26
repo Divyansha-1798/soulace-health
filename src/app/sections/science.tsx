@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Reveal from "../reveal";
+import SensorChart from "../sensor-chart";
 
 const signals = [
   {
@@ -18,7 +18,7 @@ const signals = [
 
 export default function Science() {
   return (
-    <section className="mx-auto w-full max-w-6xl px-6 pb-20">
+    <section id="science" className="mx-auto w-full max-w-6xl px-6 pb-20">
       <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:items-center">
         <Reveal>
           <span className="font-mono text-xs uppercase tracking-[0.12em] text-sage-deep">
@@ -58,15 +58,9 @@ export default function Science() {
 
         <Reveal
           delay={0.15}
-          className="group relative aspect-square w-full overflow-hidden rounded-3xl"
+          className="flex w-full flex-col justify-center rounded-3xl border border-ink/10 bg-white p-8 shadow-sm sm:p-10"
         >
-          <Image
-            src="/sensor-macro.jpg"
-            alt="Macro detail of the Soulace sensor array"
-            fill
-            className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-            sizes="(min-width: 1024px) 50vw, 100vw"
-          />
+          <SensorChart />
         </Reveal>
       </div>
     </section>
