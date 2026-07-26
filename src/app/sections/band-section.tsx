@@ -39,8 +39,8 @@ export default function BandSection() {
         className="group relative mt-10 aspect-[21/9] w-full overflow-hidden rounded-3xl"
       >
         <Image
-          src="/band-sensor-wrist.jpg"
-          alt="The Soulace band worn on a wrist, showing the sensor module"
+          src="/band-hero.jpg"
+          alt="The Soulace band worn on a wrist"
           fill
           className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
           sizes="100vw"

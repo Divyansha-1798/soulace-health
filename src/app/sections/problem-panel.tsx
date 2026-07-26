@@ -11,7 +11,7 @@ const stats = [
   },
   {
     title: "Infrasonic",
-    body: "A felt, low-frequency pulse — not a sound, not a buzz — delivered at the wrist.",
+    body: "A felt, low-frequency pulse, not a sound, not a buzz, delivered right at the wrist.",
   },
   {
     title: "Private",
@@ -31,7 +31,7 @@ export default function ProblemPanel() {
         </h2>
         <p className="mt-5 max-w-2xl text-base leading-7 text-white/70 sm:text-lg">
           Breathing apps, journals, and check-ins all ask you to notice
-          you&apos;re anxious first — often minutes after your body already
+          you&apos;re anxious first, often minutes after your body already
           has. Soulace&apos;s sensors watch the physical signals directly, so
           it can respond at the moment of onset, not after the thought spiral
           has taken hold.

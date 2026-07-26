@@ -35,7 +35,7 @@ export default function AppSection() {
           <p className="mt-5 text-base leading-7 text-ink/70">
             The app shows the same heart rate and skin conductance data the
             band is already reading, alongside every onset it caught and how
-            you responded — so you can see, over weeks, whether things are
+            you responded, so you can see, over weeks, whether things are
             actually easing.
           </p>
 

@@ -9,7 +9,7 @@ const items = [
   },
   {
     q: "How does the band know I'm anxious, not just exercising?",
-    a: "The on-device model learns your personal baseline across rest, movement, and daily activity, then looks for the specific combined pattern of a heart-rate rise alongside a skin-conductance shift — the signature of sympathetic arousal — rather than heart rate alone, which also rises during exercise.",
+    a: "The on-device model learns your personal baseline across rest, movement, and daily activity, then looks for the specific combined pattern of a heart-rate rise alongside a skin-conductance shift (the signature of sympathetic arousal) rather than heart rate alone, which also rises during exercise.",
   },
   {
     q: 'What does "infrasonic" actually mean here?',
@@ -21,7 +21,7 @@ const items = [
   },
   {
     q: "Do I need the app for the band to work?",
-    a: "No. The band senses, detects, and responds on its own. The app is optional — it's there if you want to see trends over time or share a summary with a therapist.",
+    a: "No. The band senses, detects, and responds on its own. The app is optional. It's there if you want to see trends over time or share a summary with a therapist.",
   },
 ];
 

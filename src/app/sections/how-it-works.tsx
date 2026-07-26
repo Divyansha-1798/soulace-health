@@ -35,7 +35,7 @@ export default function HowItWorks() {
         </h2>
         <p className="mx-auto mt-5 max-w-xl text-base leading-7 text-ink/70">
           Soulace doesn&apos;t ask you to manage anything mid-episode. It
-          senses, decides, and responds automatically — you only reflect once
+          senses, decides, and responds automatically, you only reflect once
           things have settled.
         </p>
       </Reveal>

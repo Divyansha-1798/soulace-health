@@ -5,14 +5,14 @@ const cases = [
   {
     title: "Work pressure",
     body: "A presentation, a deadline, a hard conversation. Soulace catches the climb in heart rate and skin conductance before it crests, and answers it in the moment.",
-    src: "/band-hero.jpg",
-    alt: "A hand resting calmly, wearing the Soulace band",
+    src: "/lifestyle-window.jpg",
+    alt: "Woman sitting calmly by a window",
   },
   {
     title: "Social settings",
     body: "Crowds, calls, the build-up before you walk in. The band meets the onset where it starts, so you can stay present instead of bracing.",
-    src: "/lifestyle-window.jpg",
-    alt: "Woman sitting calmly by a window",
+    src: "/band-sensor-wrist.jpg",
+    alt: "The Soulace band worn on a wrist, showing the sensor module",
   },
   {
     title: "Restless nights",

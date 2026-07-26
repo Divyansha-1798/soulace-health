@@ -5,16 +5,16 @@ const cards = [
   {
     label: "Real-time response",
     title: "Reads you. Answers you.",
-    body: "Most wearables stop at a chart. Soulace senses the spike and answers it in the moment — a gentle pulse at the wrist that helps steer your nervous system back down, hands-free.",
-    src: "/lifestyle-portrait.jpg",
-    alt: "Woman wearing the Soulace band, resting calmly",
+    body: "Most wearables stop at a chart. Soulace senses the spike and answers it in the moment, a gentle pulse at the wrist that helps steer your nervous system back down, hands-free.",
+    src: "/band-sensor-wrist.jpg",
+    alt: "The Soulace band worn on a wrist, showing the sensor module",
   },
   {
     label: "Not a buzz. A settle.",
     title: "A calm you can feel.",
     body: "Not a beep, not a notification. A low, felt infrasonic pulse designed to meet your body's stress response where it starts and help bring it back toward balance.",
-    src: "/sensor-macro.jpg",
-    alt: "Macro detail of the Soulace sensor array",
+    src: "/lifestyle-portrait.jpg",
+    alt: "Woman wearing the Soulace band, resting calmly",
   },
 ];
 

@@ -27,7 +27,7 @@ export default function Science() {
           Two signals, read together.
         </h2>
         <p className="mt-5 text-base leading-7 text-ink/70">
-          Heart rate alone rises for lots of reasons — exercise, caffeine,
+          Heart rate alone rises for lots of reasons, exercise, caffeine,
           standing up. Skin conductance (electrodermal activity) responds
           specifically to sympathetic nervous system arousal, the same
           system involved in anxiety. Reading both together, against your
@@ -61,7 +61,7 @@ export default function Science() {
       >
         Soulace is a wellness device, not a diagnostic or clinical
         neurostimulation device. Sensor readings support the product&apos;s
-        response and your own insight — they are not a medical-grade
+        response and your own insight, they are not a medical-grade
         diagnosis of anxiety or any other condition.
       </Reveal>
     </section>

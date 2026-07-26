@@ -34,7 +34,7 @@ export default function Hero() {
         >
           Soulace reads your heart rate and skin conductance in real time,
           and uses an onboard AI model to catch the physical onset of
-          anxiety — the racing pulse, the first sweat response — before it
+          anxiety, the racing pulse, the first sweat response, before it
           builds. The moment it detects that shift, the band delivers a
           low-frequency infrasonic vibration to your wrist to help calm your
           nervous system back down.

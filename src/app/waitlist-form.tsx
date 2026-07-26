@@ -34,7 +34,7 @@ export default function WaitlistForm() {
   if (status === "done") {
     return (
       <p className="rounded-full border border-sage-light bg-sage-light/20 px-6 py-3 font-mono text-xs uppercase tracking-[0.1em] text-sage-deep">
-        You&apos;re on the list — we&apos;ll be in touch.
+        You&apos;re on the list. We&apos;ll be in touch.
       </p>
     );
   }
@@ -60,12 +60,12 @@ export default function WaitlistForm() {
           disabled={status === "submitting"}
           className="h-12 w-full rounded-full bg-ink px-6 text-sm font-medium text-white transition-all duration-300 hover:scale-[1.01] hover:bg-sage-deep active:scale-[0.99] disabled:opacity-60 disabled:hover:scale-100"
         >
-          {status === "submitting" ? "Joining…" : "Join the waitlist"}
+          {status === "submitting" ? "Joining" : "Join the waitlist"}
         </button>
       </form>
       {status === "error" && (
         <p className="text-sm text-red-600">
-          Something went wrong — please try again in a moment.
+          Something went wrong. Please try again in a moment.
         </p>
       )}
     </div>

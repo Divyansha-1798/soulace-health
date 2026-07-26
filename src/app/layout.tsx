@@ -15,7 +15,7 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Soulace Health — Join the waitlist",
+  title: "Soulace Health: Join the waitlist",
   description:
     "Wrist-worn infrasonic vibration and an AI companion app, built to meet anxiety at the moment it starts. Join the waitlist.",
 };

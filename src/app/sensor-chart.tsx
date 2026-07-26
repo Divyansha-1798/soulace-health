@@ -47,7 +47,7 @@ export default function SensorChart({ className }: { className?: string }) {
         />
       </svg>
       <p className="mt-2 text-center font-mono text-[10px] uppercase tracking-[0.1em] text-ink/40">
-        Onset window — both signals rise together, then settle after response
+        Onset window: both signals rise together, then settle after response
       </p>
     </div>
   );
