@@ -11,14 +11,14 @@ const cases = [
   {
     title: "Social settings",
     body: "Crowds, calls, the build-up before you walk in. The band meets the onset where it starts, so you can stay present instead of bracing.",
-    src: "/band-hero.jpg",
-    alt: "A hand resting calmly, wearing the Soulace band",
+    src: "/lifestyle-portrait.jpg",
+    alt: "Woman wearing the Soulace band, resting calmly",
   },
   {
     title: "Restless nights",
     body: "Pulse still up when the lights go out. The infrasonic pulse cues the wind-down your body doesn't always find on its own.",
-    src: "/lifestyle-portrait.jpg",
-    alt: "Woman wearing the Soulace band, resting calmly",
+    src: "/band-hero.jpg",
+    alt: "A hand resting calmly, wearing the Soulace band",
   },
 ];
 
