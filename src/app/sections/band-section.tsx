@@ -45,27 +45,6 @@ export default function BandSection() {
           className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
           sizes="100vw"
         />
-        <div className="absolute bottom-6 left-1/2 flex -translate-x-1/2 items-center gap-4">
-          <button
-            type="button"
-            aria-label="Previous"
-            className="flex h-9 w-9 items-center justify-center rounded-full bg-white/90 text-ink transition-colors hover:bg-white"
-          >
-            ‹
-          </button>
-          <span className="flex items-center gap-2">
-            <span className="h-1.5 w-6 rounded-full bg-ink" aria-hidden />
-            <span className="h-1.5 w-1.5 rounded-full bg-white/70" aria-hidden />
-            <span className="h-1.5 w-1.5 rounded-full bg-white/70" aria-hidden />
-          </span>
-          <button
-            type="button"
-            aria-label="Next"
-            className="flex h-9 w-9 items-center justify-center rounded-full bg-white/90 text-ink transition-colors hover:bg-white"
-          >
-            ›
-          </button>
-        </div>
       </Reveal>
     </section>
   );
