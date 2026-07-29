@@ -17,8 +17,8 @@ const cases = [
   {
     title: "Restless nights",
     body: "Pulse still up when the lights go out. The infrasonic pulse cues the wind-down your body doesn't always find on its own.",
-    src: "/band-hero.jpg",
-    alt: "A hand resting calmly, wearing the Soulace band",
+    src: "/band-sensor-wrist.jpg",
+    alt: "The Soulace band worn on a wrist, showing the sensor module",
   },
 ];
 
